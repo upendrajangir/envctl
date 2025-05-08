@@ -2,5 +2,26 @@
 name = "envctl"
 version = "0.1.0"
 edition = "2024"
+rust-version = "1.86.0"
+authors = ["Upendra Dhanerwa upendrajangir9@gmail.com"]
+description = "A high-performance CLI tool to start/stop cloud environments defined in YAML files to reduce cloud cost."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/upendrajangir/envctl"
+keywords = ["cli", "cloud", "automation", "cost-optimization"]
+categories = ["command-line-utilities", "dev-tools", "cloud"]
+default-run = "envctl"
 
-[dependencies]
+[build-dependencies]
+# Reserved for future build scripts
+
+[dev-dependencies]
+# Add test-only crates when needed
+
+[features]
+default = []
+# Define optional features for modular functionality later
+
+[[bin]]
+name = "envctl"
+path = "src/main.rs"
